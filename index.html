@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Receitas Deliciosas</h1>
+        <p>As melhores receitas caseiras para o seu dia!</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="bdd\lasanha.jpg" alt="Lasanha">
+            <h2>Lasanha à Bolonhesa</h2>
+            <p>Uma lasanha clássica, cremosa e cheia de sabor.</p>
+            <button onclick="mostrarReceita('lasanha')">Ver Receita</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="bdd\panqueca.jpg" alt="Panqueca">
+            <h2>Panquecas Americanas</h2>
+            <p>Fofinhas e perfeitas para o café da manhã.</p>
+            <button onclick="mostrarReceita('panqueca')">Ver Receita</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="bdd\salada.jpg" alt="Salada">
+            <h2>Salada Tropical</h2>
+            <p>Refrescante e saudável, ideal para dias quentes.</p>
+            <button onclick="mostrarReceita('salada')">Ver Receita</button>
+        </div>
+
+    </main>
+
+    <section id="receita" class="receita"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
