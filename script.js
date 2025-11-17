@@ -48,10 +48,21 @@ function mostrarReceita(tipo) {
                 <li>1 colher (sopa) de fermento em pó</li>
             </ul>
             <p><strong>Modo de preparo:</strong> Misture todos os ingredientes, coloque em uma forma untada e leve ao forno preaquecido a 180°C por cerca de 40 minutos.</p>
+        `,
+        pudim: `
+            <h2>Pudim de Leite Condensado</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 lata de leite condensado</li>
+                <li>1 lata de leite (use a lata do condensado como medida)</li>
+                <li>3 ovos</li>
+                <li>1 xícara de açúcar (para a calda)</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <p>Derreta o açúcar em fogo baixo até virar uma calda dourada e caramelize a forma. No liquidificador, bata os ovos, o leite e o leite condensado. Despeje na forma e leve ao forno em banho-maria por cerca de 1 hora. Deixe esfriar e desenforme.</p>
         `
     };
 
-    // Evita erros caso o tipo não exista
     if (receitas[tipo]) {
         receitaBox.innerHTML = receitas[tipo];
     } else {
