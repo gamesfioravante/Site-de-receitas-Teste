@@ -40,7 +40,7 @@ function mostrarReceita(tipo) {
             <p><strong>Ingredientes:</strong></p>
             <ul>
                 <li>2 xícaras de farinha de trigo</li>
-                <li>1 e 1/2 xícara de açúca</li>
+                <li>1 e 1/2 xícara de açúcar</li>
                 <li>1 xícara de chocolate em pó</li>
                 <li>3 ovos</li>
                 <li>1 xícara de leite</li>
@@ -48,9 +48,13 @@ function mostrarReceita(tipo) {
                 <li>1 colher (sopa) de fermento em pó</li>
             </ul>
             <p><strong>Modo de preparo:</strong> Misture todos os ingredientes, coloque em uma forma untada e leve ao forno preaquecido a 180°C por cerca de 40 minutos.</p>
-        `,
-
+        `
     };
 
-    receitaBox.innerHTML = receitas[tipo];
+    // Evita erros caso o tipo não exista
+    if (receitas[tipo]) {
+        receitaBox.innerHTML = receitas[tipo];
+    } else {
+        receitaBox.innerHTML = "<p>Receita não encontrada.</p>";
+    }
 }
