@@ -34,7 +34,22 @@ function mostrarReceita(tipo) {
                 <li>Molho de iogurte</li>
             </ul>
             <p><strong>Modo de preparo:</strong> Misture todos os ingredientes e finalize com o molho.</p>
-        `
+        `,
+        bolo: `
+            <h2>Bolo de Chocolate Simples</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>2 xícaras de farinha de trigo</li>
+                <li>1 e 1/2 xícara de açúca</li>
+                <li>1 xícara de chocolate em pó</li>
+                <li>3 ovos</li>
+                <li>1 xícara de leite</li>
+                <li>1/2 xícara de óleo</li>
+                <li>1 colher (sopa) de fermento em pó</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong> Misture todos os ingredientes, coloque em uma forma untada e leve ao forno preaquecido a 180°C por cerca de 40 minutos.</p>
+        `,
+
     };
 
     receitaBox.innerHTML = receitas[tipo];
