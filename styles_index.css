@@ -48,8 +48,9 @@ header {
     color: #555;
 }
 
-button {
-    margin: 20px 0;
+/* 🔥 BOTÕES COM ESPAÇAMENTO */
+.card button {
+    margin: 20px 5px; /* antes estava 20px 0 */
     padding: 10px 18px;
     border: none;
     background: #ff6f61;
