@@ -11,6 +11,8 @@
             background: #f4f4f9;
             text-align: center;
             padding: 20px;
+            min-height: 100vh;
+            overflow-y: auto; /* permite scroll no celular */
         }
 
         h1 {
@@ -23,12 +25,15 @@
             flex-direction: column;
             align-items: center;
             margin-top: 30px;
+            width: 100%;
         }
 
         .methods {
             display: flex;
             gap: 30px;
             margin-bottom: 30px;
+            flex-wrap: wrap; /* evita cortar opções */
+            justify-content: center;
         }
 
         .method {
@@ -81,6 +86,24 @@
             opacity: 0.4;
             cursor: not-allowed;
         }
+
+        /* 🔥 RESPONSIVIDADE PARA CELULAR */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .methods {
+                flex-direction: column;
+                gap: 20px; /* espaço vertical entre os botões */
+            }
+
+            .method {
+                width: 90%;
+                max-width: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -93,32 +116,31 @@
 
         <div class="methods">
 
-            <!-- PIX (único ativo) -->
+            <!-- PIX -->
             <div class="method" onclick="mostrarPix()">
                 <img src="https://cdn-icons-png.flaticon.com/512/825/825581.png" alt="Pix">
                 <p><strong>PIX</strong></p>
             </div>
 
-            <!-- Crédito (desativado por enquanto) -->
+            <!-- Crédito -->
             <div class="method disabled">
                 <img src="https://cdn-icons-png.flaticon.com/512/39/39272.png" alt="Cartão Crédito">
                 <p>Crédito</p>
             </div>
 
-            <!-- Débito (desativado por enquanto) -->
+            <!-- Débito -->
             <div class="method disabled">
                 <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Cartão Débito">
                 <p>Débito</p>
             </div>
         </div>
 
-        <!-- Área PIX -->
+        <!-- PIX -->
         <div id="pix-area">
             <h2>QR Code do PIX</h2>
             <img src="bdd/qrcod.jpeg" alt="QR Code PIX">
         </div>
 
-        <!-- Botão voltar -->
         <button onclick="window.location.href='index.html'">Voltar ao início</button>
 
     </div>
