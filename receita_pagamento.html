@@ -67,6 +67,13 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
+        .valor-doacao {
+            font-size: 22px;
+            margin-top: 15px;
+            color: #444;
+            font-weight: bold;
+        }
+
         button {
             margin-top: 30px;
             padding: 12px 20px;
@@ -139,6 +146,9 @@
         <div id="pix-area">
             <h2>QR Code do PIX</h2>
             <img src="bdd/qrcod.jpeg" alt="QR Code PIX">
+
+            <!-- 🔥 VALOR ABAIXO DO QR CODE -->
+            <p class="valor-doacao">💸 Valor: <strong>R$ 2,00</strong></p>
         </div>
 
         <button onclick="window.location.href='index.html'">Voltar ao início</button>
